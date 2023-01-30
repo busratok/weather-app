@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+}
+input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.card {
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  z-index: 2;
+  cursor: pointer;
+}
+.close-btn:active {
+  transform: scale(0.8);
+}
+.temperature::after {
+  content: "°C";
+}
